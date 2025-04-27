@@ -1,0 +1,327 @@
+:root {
+  --font-family: "Poppins", sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+.container1338 {
+  max-width: 1338px;
+  margin: 0 auto;
+}
+
+.p_text20 {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  color: #8f95a5;
+}
+
+.p_text16 {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px; 
+  line-height: 24px;
+  color: #8f95a5;
+}
+
+.title {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 167%;
+  color: #000;
+}
+
+.title_cards {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 30px;
+  color: #263238;
+  line-height: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {}
+
+.header_MenuFlex {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.header_Logo {
+  padding-top: 15px;
+}
+
+.header_innerMenuFlex {
+  display: flex;
+  justify-content: space-between;
+  max-width: 980px;
+  width: 100%;
+}
+
+.header_NavMenu {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.header_navLink {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 20px;
+  color: #263238;
+
+}
+
+.header_menuButton {
+  display: block;
+  padding-top: 15px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 24px;
+  color: #000;
+  border: 2px solid #263238;
+  border-radius: 5px;
+  width: 220px;
+  height: 70px;
+  text-align: center;
+}
+
+.header_BottomFlex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header_Info {
+  max-width: 632px;
+  width: 100%;
+}
+
+.header_titleImgFlex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 52px;
+}
+
+.header_InfoTitle {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 125%;
+  color: #000;
+  max-width: 386px;
+  margin-bottom: 40px;
+}
+
+.header_TitleImg {
+  width: 120px;
+  height: 120px;
+  margin-top: 25px;
+  margin-right: 85px;
+}
+
+.header_InfoText {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 24px;
+  color: #8f95a5;
+  margin-bottom: 65px;
+}
+
+.header_InfoButton {
+  display: block;
+  padding-top: 30px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 36px;
+  color: #fff;
+  border-radius: 15px;
+  width: 438px;
+  height: 118px;
+  background: #263238;
+  text-align: center;
+}
+
+/* skills */
+.label {}
+
+.skills {}
+
+
+.skills_title {
+  text-align: center;
+  padding-top: 105px;
+  margin-bottom: 95px;
+}
+
+.scills_boxFlex1 {
+  display: flex;
+  gap: 18px;
+}
+
+.skills_cardSpeaking {
+  border-radius: 10px;
+  width: 435px;
+  height: 894px;
+  background: #f5f5f5;
+}
+
+.cardSpeakingImg {
+  display: block;
+  margin: 0 auto;
+  padding-top: 36px;
+}
+
+.skills_cardSpeakingInfo {
+  padding: 0 40px;
+}
+
+.skills_cardSpeakingTitle {
+  padding-top: 31px;
+  margin-bottom: 25px;
+}
+
+.skills_cardSpeakingText1 {
+  padding-top: 5px;
+  margin-bottom: 24px;
+}
+.skills_cardSpeakingText2{
+  margin-bottom: 35px;
+  max-width: 310px;
+  width: 100%;
+
+}
+
+.skills_cardButton {
+  display: block;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  color: #fff;
+  border-radius: 5px;
+  width: 230px;
+  height: 60px;
+  background-color: #263238;
+  text-align: center;
+  padding-top: 17px;
+}
+
+.scills_boxWritingListeningReading {}
+
+.scills_boxFlex2 {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+
+.skills_cardWriting {
+  border-radius: 10px;
+  width: 434px;
+  height: 531px;
+  background: #f5f5f5;
+}
+
+.skills_cardWritingImg {
+  display: block;
+  max-width: 280px;
+  height: 280px;
+  margin-left: 122px;
+}
+
+.skills_cardWritingInfo {
+  padding: 0 40px;
+}
+
+.skills_cardWritingTitle {
+  line-height: 100%;
+  margin-bottom: 17px;
+}
+
+.skills_cardWritingText {
+  margin-bottom: 31px;
+}
+
+.skills_cardReading {
+  border-radius: 10px;
+  width: 435px;
+  height: 532px;
+  background: #f5f5f5;
+}
+
+.skills_cardReadingImg {
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+.skills_cardReadingInfo {
+  padding: 0 40px;
+}
+
+.skills_cardReadingTitle {
+  padding-top: 19px;
+  
+}
+
+.skills_cardReadingText {
+  padding-top: 12px;
+  margin-bottom: 35px;
+}
+
+.skills_cardListening {
+  border-radius: 10px;
+  width: 885px;
+  height: 343px;
+  background: #f5f5f5;
+  display: flex;
+  justify-content: space-between;
+}
+
+.skills_cardListeningInfo {
+  padding-left: 45px;
+  margin-bottom: 19px;
+}
+
+.skills_cardListeningTitle {
+  padding-top: 72px;
+  margin-bottom: 19px;
+}
+
+.skills_cardListeningText {
+  max-width: 339px;
+  margin-bottom: 24px;
+}
+.skills_cardListeningImg{
+  max-width: 382px;
+  height: 255px;
+  margin: 47px 26px 0 0;
+}
