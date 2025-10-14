@@ -175,8 +175,6 @@ a {
 /* skills */
 .label {}
 
-.skills {}
-
 
 .skills_title {
   text-align: center;
@@ -236,7 +234,6 @@ a {
   padding-top: 17px;
 }
 
-.scills_boxWritingListeningReading {}
 
 .scills_boxFlex2 {
   display: flex;
@@ -325,3 +322,46 @@ a {
   height: 255px;
   margin: 47px 26px 0 0;
 }
+
+/* About Us */
+.label{}
+
+
+.aboutUs_container{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 252px;
+}
+
+.aboutUs_title {
+  margin-top: 30px;
+
+}
+
+.aboutUs_text {
+  max-width: 635px;
+  margin-top: 30px;
+  margin-bottom: 35px;
+}
+
+.aboutUs_infoFlex {
+  display: flex;
+  justify-content:space-between;
+  
+}
+
+.aboutUs_info1Text {
+  text-align: center;
+}
+
+.aboutUs_info2Number {
+  text-align: center;
+}
+
+.aboutUs_info3 {
+  padding-right: 20px;
+}
+.aboutUs_info3Number {
+  text-align: center;
+}
+
