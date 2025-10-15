@@ -402,6 +402,9 @@ a {
   gap: 7px;
 }
 
+.pricing_card2BlockInfo{
+  margin-left: 20px;
+}
 .pricing_CardText2{
   margin-top: 27px;
   margin-bottom: 70px;
