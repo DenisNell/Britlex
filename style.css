@@ -365,3 +365,59 @@ a {
   text-align: center;
 }
 
+/* Pricing */
+.label{}
+
+.pricing {
+  margin-top: 188px;
+}
+
+.pricing_title {
+  text-align: center;
+}
+
+.pricing_ContainerCardsFlex {
+  display: flex;
+  
+  margin-top: 50px;
+  gap: 30px;
+}
+.pricing_Card1 {
+  max-width: 430px;
+}
+.pricing_img {
+  margin-left: 20px;
+}
+.pricing_CardTitle {
+  margin-top: 52px;
+}
+
+.pricing_CardText {
+  margin-top: 25px;
+  margin-bottom: 37px;
+}
+.pricing_CardPrice {
+  display: flex;
+  margin-left: 30px;
+  gap: 7px;
+}
+
+.pricing_CardText2{
+  margin-top: 27px;
+  margin-bottom: 70px;
+}
+.pricing_img2 {
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
+.pricing_img3 {
+  margin-left: 50px;
+}
+.pricing_CardTitle3{
+  margin-top: 25px;
+}
+.pricing_CardText3{
+  margin-top: 25px;
+  margin-bottom: 70px;
+}
