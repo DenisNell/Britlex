@@ -69,7 +69,8 @@ a {
   text-decoration: none;
 }
 
-.header {}
+/* Header */
+.label {}
 
 .header_MenuFlex {
   display: flex;
@@ -326,7 +327,6 @@ a {
 /* About Us */
 .label{}
 
-
 .aboutUs_container{
   display: flex;
   justify-content: space-between;
@@ -432,6 +432,8 @@ a {
 }
 
 /* Contact Us */
+.label{}
+
 .contactUs {
   margin-top: 265px;
 }
@@ -453,8 +455,7 @@ a {
   display: flex;
   gap: 10px;
 }
-.form__input-email {
-}
+
 .form_input {
   border: 1px solid #8f95a5;
   border-radius: 10px;
