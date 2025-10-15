@@ -397,7 +397,13 @@ a {
   margin-bottom: 37px;
 }
 .pricing_CardPrice {
+  border-radius: 5px;
+  width: 240px;
+  height: 45px; 
+  background: #eee;
   display: flex;
+  align-items: center;
+  justify-content: center;
   margin-left: 30px;
   gap: 7px;
 }
@@ -424,3 +430,80 @@ a {
   margin-top: 25px;
   margin-bottom: 70px;
 }
+
+/* Contact Us */
+.contactUs {
+  margin-top: 265px;
+}
+
+.contactUs_flex {
+  display: flex;
+  gap: 96px;
+}
+
+.contactUs_Title {
+  margin-top: 33px;
+}
+
+.contactUs_text {
+  margin-top: 35px;
+  margin-bottom: 50px;
+}
+.contactUs_SubscribeBlock {
+  display: flex;
+  gap: 10px;
+}
+.form__input-email {
+}
+.form_input {
+  border: 1px solid #8f95a5;
+  border-radius: 10px;
+  width: 450px;
+  height: 80px;
+  font-family: var(--font-family);
+  font-size: 16px;
+  padding-left: 30px;
+}
+.contactUs_SubButton {
+  display: block;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 20px;
+  color: #fff;
+  border-radius: 10px;
+  width: 264px;
+  height: 80px;
+  background-color: #263238;
+  text-align: center;
+  padding-top: 23px;
+}
+
+.contactUs_Line{
+  margin-top: 130px;
+  width: 1338px;
+  height: 1px;
+  background: #c4c4c4;
+}
+.contactUs_footerBlockFlex {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  align-items: center;
+}
+.contactUs_footerBritlex {
+  font-family: var(--font-family);
+font-weight: 400;
+font-size: 36px;
+color: #000;
+}
+.contactUs_footerPrivacy {
+  font-family: var(--font-family);
+font-weight: 400;
+font-size: 24px;
+color: #8f95a5;
+}
+.Britlexcolor{
+  color: #939393;
+}
+
