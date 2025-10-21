@@ -15,6 +15,12 @@
   <header class="header">
     <div class="container1338">
       <div class="header_MenuFlex">
+        <!-- Бургер-меню -->
+        <div class="burger-menu" id="burgerMenu">
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+        </div>
         <a href="#"><img class="header_Logo" src="img/Logo.png" alt=""></a>
         <div class="header_innerMenuFlex">
           <ul class="header_NavMenu">
@@ -199,5 +205,25 @@
   </footer>
 
 </body>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const burgerMenu = document.querySelector('.burger-menu');
+    const innerMenu = document.querySelector('.header_innerMenuFlex');
+    
+    burgerMenu.addEventListener('click', function() {
+        this.classList.toggle('active');
+        innerMenu.classList.toggle('active');
+    });
+    
+    // Закрытие меню при клике на ссылку
+    const navLinks = document.querySelectorAll('.header_navLink');
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            burgerMenu.classList.remove('active');
+            innerMenu.classList.remove('active');
+        });
+    });
+});
+</script>
 
 </html>

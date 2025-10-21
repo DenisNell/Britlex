@@ -96,6 +96,27 @@ a {
   padding-top: 15px;
 }
 
+.burger-menu {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 30px;
+}
+
+.burger-menu span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: #263238;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
 .header_innerMenuFlex {
   display: flex;
   justify-content: space-between;
@@ -535,6 +556,12 @@ color: #8f95a5;
   }
   .header_BottomImg{
     margin: 0 auto;
+    width: 100%;
+  }
+  .header_BottomImg img {
+    width: 100%;
+    height: auto;
+    display: block;
   }
   
   .scills_boxgrid {
@@ -603,4 +630,76 @@ color: #8f95a5;
   .skills_cardListeningTitle{
     padding-top: 25px;
   }
+}
+
+@media screen and (max-width:850px){
+  .scills_boxgrid{
+    grid-template-areas:
+    "one"
+    "two"
+    "three"
+    "four";
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .skills_cardListening{
+    max-width: 434px;
+    min-height: 650px;
+    width: 100%;
+  }
+  .skills_cardReading{
+    min-height: 650px;
+  }
+  .contactUs_SubscribeBlock{
+    flex-wrap: wrap;
+  }
+  .burger-menu {
+    display: flex;
+}
+
+.header_innerMenuFlex {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: white;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    z-index: 1000;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header_NavMenu {
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.header_menuButton {
+    width: 200px;
+    height: 60px;
+    font-size: 20px;
+}
+
+/* Показываем меню при активном классе */
+.header_innerMenuFlex.active {
+    display: flex;
+}
+
+/* Анимация для бургера при активном состоянии */
+.burger-menu.active span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+
+.burger-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.burger-menu.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
 }
