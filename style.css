@@ -429,6 +429,7 @@ a {
 .pricing_CardText2{
   margin-top: 27px;
   margin-bottom: 70px;
+  max-width: 391px;
 }
 .pricing_img2 {
   margin-top: 30px;
@@ -444,6 +445,7 @@ a {
 .pricing_CardText3{
   margin-top: 25px;
   margin-bottom: 70px;
+  max-width: 437px;
 }
 
 /* Contact Us */
@@ -496,8 +498,9 @@ a {
 
 .contactUs_Line{
   margin-top: 130px;
-  width: 1338px;
+  max-width: 1138px;
   height: 1px;
+  margin: 0 auto;
   background: #c4c4c4;
 }
 .contactUs_footerBlockFlex {
@@ -541,7 +544,7 @@ color: #8f95a5;
     "one two "
     "three four";
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 534px 534px;  
+    grid-template-rows: 650px 650px;  
   }
   .skills_cardListening{
     display: block;
@@ -554,5 +557,50 @@ color: #8f95a5;
   }  
   .contactUs_flex{
     flex-wrap: wrap;
+  }
+  .contactUs_Img{
+    margin: 0 auto;
+  }
+  .contactUs_Title{
+    text-align: center;
+      }
+  .contactUs_SubscribeBlock{
+    justify-content: center;
+  }
+  .pricing_ContainerCardsFlex{
+    justify-content: center;
+  }
+  .aboutUs_container{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .cardSpeakingImg{
+    max-width: 270px;
+    padding: 0 22px;
+  }
+  .skills_cardSpeakingTitle{    
+    padding-top: 15px;
+    margin-bottom: 15px;
+  }
+  .skills_cardWritingText{
+    margin-bottom: 157px;
+  }
+  .skills_cardReadingText{
+    margin-bottom: 164px;
+  }
+  .skills_cardListeningText{
+    margin-bottom: 155px;
+  }
+  .skills_cardReadingText{
+    max-width: 354px;
+  }
+  .skills_cardWritingText{
+    max-width: 354px;
+  }
+  .skills_cardListeningImg{
+    margin-bottom: 0;
+  }
+  .skills_cardListeningTitle{
+    padding-top: 25px;
   }
 }
