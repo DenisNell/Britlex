@@ -158,8 +158,9 @@ a {
   margin-bottom: 40px;
 }
 
-.header_TitleImg {
-  width: 120px;
+.header_TitleImg {  
+  max-width: 120px;
+  width: 100%;
   height: 120px;
   margin-top: 25px;
   margin-right: 85px;
@@ -171,6 +172,11 @@ a {
   font-size: 24px;
   color: #8f95a5;
   margin-bottom: 65px;
+}
+.header_BottomImg{
+  max-width: 661px;
+  width: 100%;
+  height: auto;
 }
 
 .header_InfoButton {
@@ -197,42 +203,47 @@ a {
   margin-bottom: 95px;
 }
 
-.scills_boxFlex1 {
-  display: flex;
+.scills_boxgrid {
+  display: grid;
   gap: 18px;
+  grid-template-areas:
+  "one two three"
+  "one four four";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 531px 343px;  
 }
 
+
 .skills_cardSpeaking {
+  grid-area: one;
   border-radius: 10px;
-  width: 435px;
-  height: 894px;
   background: #f5f5f5;
 }
 
 .cardSpeakingImg {
-  display: block;
-  margin: 0 auto;
   padding-top: 36px;
+  padding-left: 22px;
 }
 
 .skills_cardSpeakingInfo {
-  padding: 0 40px;
+  padding: 0 38px;
 }
 
 .skills_cardSpeakingTitle {
-  padding-top: 31px;
+  padding-top: 27px;
   margin-bottom: 25px;
 }
 
 .skills_cardSpeakingText1 {
   padding-top: 5px;
   margin-bottom: 24px;
+  max-width: 350px;
+  width: 100%;
 }
 .skills_cardSpeakingText2{
-  margin-bottom: 35px;
+  margin-bottom: 33px;
   max-width: 310px;
   width: 100%;
-
 }
 
 .skills_cardButton {
@@ -249,17 +260,9 @@ a {
   padding-top: 17px;
 }
 
-
-.scills_boxFlex2 {
-  display: flex;
-  gap: 18px;
-  margin-bottom: 18px;
-}
-
 .skills_cardWriting {
+  grid-area: two;
   border-radius: 10px;
-  width: 434px;
-  height: 531px;
   background: #f5f5f5;
 }
 
@@ -280,19 +283,18 @@ a {
 }
 
 .skills_cardWritingText {
-  margin-bottom: 31px;
+  margin-bottom: 28px;
 }
 
 .skills_cardReading {
+  grid-area: three;
   border-radius: 10px;
-  width: 435px;
-  height: 532px;
   background: #f5f5f5;
 }
 
 .skills_cardReadingImg {
-  margin: 0 auto;
   padding-top: 10px;
+  padding-right: 33px;
 }
 
 .skills_cardReadingInfo {
@@ -306,16 +308,16 @@ a {
 
 .skills_cardReadingText {
   padding-top: 12px;
-  margin-bottom: 35px;
+  margin-bottom: 33px;
 }
 
 .skills_cardListening {
-  border-radius: 10px;
-  width: 885px;
-  height: 343px;
-  background: #f5f5f5;
+  grid-area: four;
   display: flex;
   justify-content: space-between;
+  flex-direction: row-reverse;
+  border-radius: 10px;
+  background: #f5f5f5;
 }
 
 .skills_cardListeningInfo {
@@ -324,8 +326,8 @@ a {
 }
 
 .skills_cardListeningTitle {
-  padding-top: 72px;
-  margin-bottom: 19px;
+  padding-top: 71px;
+  margin-bottom: 20px;
 }
 
 .skills_cardListeningText {
@@ -344,7 +346,7 @@ a {
 .aboutUs_container{
   display: flex;
   justify-content: space-between;
-  margin-top: 252px;
+  margin-top: 255px;
 }
 
 .aboutUs_title {
@@ -354,7 +356,7 @@ a {
 
 .aboutUs_text {
   max-width: 635px;
-  margin-top: 30px;
+  margin-top: 24px;
   margin-bottom: 35px;
 }
 
@@ -392,7 +394,6 @@ a {
 
 .pricing_ContainerCardsFlex {
   display: flex;
-  
   margin-top: 50px;
   gap: 30px;
 }
@@ -449,7 +450,7 @@ a {
 .label{}
 
 .contactUs {
-  margin-top: 265px;
+  margin-top: 250px;
 }
 
 .contactUs_flex {
@@ -522,3 +523,36 @@ color: #8f95a5;
   color: #939393;
 }
 
+@media screen and (max-width:1353px) {
+  .header_BottomFlex{
+    display: block;
+  }
+  .header_Info{
+    margin: 0 auto;
+  }
+  .header_BottomImg{
+    margin: 0 auto;
+  }
+  
+  .scills_boxgrid {
+    display: grid;    
+    gap: 18px;
+    grid-template-areas:
+    "one two "
+    "three four";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 534px 534px;  
+  }
+  .skills_cardListening{
+    display: block;
+  }
+  .container1338{
+    padding: 0 15px;
+  }
+  .pricing_ContainerCardsFlex {
+    flex-wrap: wrap;
+  }  
+  .contactUs_flex{
+    flex-wrap: wrap;
+  }
+}
