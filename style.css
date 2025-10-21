@@ -650,6 +650,9 @@ color: #8f95a5;
   .skills_cardReading{
     min-height: 650px;
   }
+  .form_input{
+    max-width: 450px;
+  }
   .contactUs_SubscribeBlock{
     flex-wrap: wrap;
   }
