@@ -695,6 +695,15 @@ a {
   .skills_cardSpeakingInfo{
     padding: 0 15px;
   }
+  .skills_cardSpeakingText2 {
+    margin-bottom: 60px;
+  }
+  .skills_cardWritingText {
+    margin-bottom: 170px;
+  }
+  .skills_cardReadingText {
+    margin-bottom: 150px;
+  }
   .skills_cardWritingInfo{
     padding: 0 15px;
   }
@@ -749,6 +758,9 @@ a {
     text-align: center;
     margin: 0 0 15px 0;
   }
+  .p_text20{
+    text-align: center;
+  }
 
   .pricing {
     margin-top: 50px;
@@ -761,6 +773,14 @@ a {
     max-width: 100%;
     height: auto;
     display: block;
+  }
+  .aboutUs_infoFlex{
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+  }
+  .aboutUs_info3{
+    padding: 0;
   }
   .pricing_ContainerCardsFlex{
     gap: 50px;
