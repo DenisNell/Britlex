@@ -745,8 +745,9 @@ a {
     margin-top: 50px;
   }
 
-  .aboutUs_title {
+  .title {
     text-align: center;
+    margin: 0 0 15px 0;
   }
 
   .pricing {
@@ -764,16 +765,15 @@ a {
   .pricing_ContainerCardsFlex{
     gap: 50px;
   }
-  .pricing_img2{
-    max-width: 100%;
-    height: auto;
-    display: block;
-  }
+  
   .pricing_img,
   .pricing_img2,
   .pricing_img3 {
     display: block;
-    margin: 0 auto;;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    display: block;
   }
     
   
