@@ -574,7 +574,17 @@ a {
 
 @media screen and (max-width:1353px) {
   .header_BottomFlex {
-    display: block;
+    flex-direction: column-reverse;
+  }
+  .header_titleImgFlex{
+    align-items: normal;
+  }
+  .header_InfoTitle{
+    font-size: 48px;
+    text-align: center;
+  }
+  .header_InfoButton{
+    margin: 0 auto;
   }
 
   .header_Info {
@@ -591,6 +601,10 @@ a {
     height: auto;
     display: block;
   }
+  .skills_title {
+    padding-top: 40px;
+    margin-bottom: 50px;
+  }
 
   .scills_boxgrid {
     display: grid;
@@ -599,11 +613,32 @@ a {
       "one two "
       "three four";
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 650px 650px;
+    grid-template-rows: 750px 690px;
   }
 
   .skills_cardListening {
     display: block;
+  }
+  .skills_cardSpeakingText2 {
+    margin-bottom: 20px;
+  }
+  .skills_cardWritingImg{
+    margin-top: 25px;
+  }
+  .skills_cardWritingTitle {
+    margin-top: 102px;
+  }
+  .skills_cardWritingText {
+    margin-bottom: 140px;
+  }
+  .skills_cardReadingImg{
+    margin-top: 55px;
+  }
+  .skills_cardReadingText {
+    margin-bottom: 195px;
+  }
+  .skills_cardListeningText {
+    margin-bottom: 220px;
   }
 
   .container1338 {
@@ -649,9 +684,7 @@ a {
     margin-bottom: 15px;
   }
 
-  .skills_cardWritingText {
-    margin-bottom: 157px;
-  }
+  
 
   .skills_cardReadingText {
     margin-bottom: 164px;
@@ -676,11 +709,30 @@ a {
   .skills_cardListeningTitle {
     padding-top: 25px;
   }
+  .pricing {
+    margin-top: 50px;
+  }
+  .aboutUs_container {
+    margin-top: 50px;
+  }
+  .aboutUs_title {
+    text-align: center;
+  }
+  .contactUs_flex{
+    gap: 0;
+  }  
 }
 
 @media screen and (max-width:850px) {
   .container1338{
     padding: 0 15px;
+  }
+  .header_titleImgFlex{
+    display: block;
+  }
+  
+  .header_InfoText{
+    text-align: center;
   }
   .scills_boxgrid {
     grid-template-areas:
@@ -689,6 +741,7 @@ a {
       "three"
       "four";
     grid-template-columns: 370px;
+    grid-template-rows: 650px;
     justify-items: center;
     justify-content: center;
   }
@@ -706,13 +759,16 @@ a {
   }
   .skills_cardWritingInfo{
     padding: 0 15px;
+    margin-bottom: 20px;
   }
   .skills_cardReadingInfo{
     padding: 0 15px;
   }
   .skills_cardReadingImg{
     padding: 0;
+    margin: 0;
   }
+  
   .skills_cardReadingImg img{
     margin: 0 auto;
     max-width: 100%;
@@ -750,9 +806,7 @@ a {
     max-width: 375px;
   }
 
-  .aboutUs_container {
-    margin-top: 50px;
-  }
+  
 
   .title {
     text-align: center;
@@ -762,9 +816,7 @@ a {
     text-align: center;
   }
 
-  .pricing {
-    margin-top: 50px;
-  }
+  
 
   .header_TitleImg {
     display: none;
@@ -818,12 +870,11 @@ a {
   .contactUs{
     margin-top: 150px;
   }
-  .contactUs_flex{
-    gap: 0;
-  }
+  
   .contactUs_footerBlockFlex{
-    gap: 15px;
+    gap: 50px;
   }
+  
 
   .burger-menu {
     display: flex;
