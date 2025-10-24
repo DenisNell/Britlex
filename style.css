@@ -827,7 +827,7 @@ a {
       "two"
       "three"
       "four";
-    grid-template-columns: 370px;
+    grid-template-columns: 1fr;
     grid-template-rows: 650px;
     justify-items: center;
     justify-content: center;
