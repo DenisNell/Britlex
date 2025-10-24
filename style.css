@@ -218,10 +218,12 @@ a {
 /* skills */
 .label {}
 
+.skills {
+  margin-top: 100px;
+}
 
 .skills_title {
   text-align: center;
-  padding-top: 105px;
   margin-bottom: 95px;
 }
 
@@ -512,11 +514,16 @@ a {
   display: flex;
   gap: 10px;
 }
+.form__input-email {
+  width: 100%; /* или min-width: 450px */
+  max-width: 450px;
+}
 
 .form_input {
   border: 2px solid #8f95a5;
   border-radius: 10px;
-  width: 450px;
+  max-width: 450px;
+  width: 100%;
   height: 80px;
   font-family: var(--font-family);
   font-size: 16px;
@@ -572,18 +579,25 @@ a {
   color: #939393;
 }
 
+.label {}
+.label {}
+.label {}
+
 @media screen and (max-width:1353px) {
   .header_BottomFlex {
     flex-direction: column-reverse;
   }
-  .header_titleImgFlex{
+
+  .header_titleImgFlex {
     align-items: normal;
   }
-  .header_InfoTitle{
+
+  .header_InfoTitle {
     font-size: 48px;
     text-align: center;
   }
-  .header_InfoButton{
+
+  .header_InfoButton {
     margin: 0 auto;
   }
 
@@ -601,8 +615,8 @@ a {
     height: auto;
     display: block;
   }
+
   .skills_title {
-    padding-top: 40px;
     margin-bottom: 50px;
   }
 
@@ -619,24 +633,31 @@ a {
   .skills_cardListening {
     display: block;
   }
+
   .skills_cardSpeakingText2 {
     margin-bottom: 20px;
   }
-  .skills_cardWritingImg{
+
+  .skills_cardWritingImg {
     margin-top: 25px;
   }
+
   .skills_cardWritingTitle {
     margin-top: 102px;
   }
+
   .skills_cardWritingText {
     margin-bottom: 140px;
   }
-  .skills_cardReadingImg{
+
+  .skills_cardReadingImg {
     margin-top: 55px;
   }
+
   .skills_cardReadingText {
     margin-bottom: 195px;
   }
+
   .skills_cardListeningText {
     margin-bottom: 220px;
   }
@@ -684,8 +705,6 @@ a {
     margin-bottom: 15px;
   }
 
-  
-
   .skills_cardReadingText {
     margin-bottom: 164px;
   }
@@ -709,31 +728,99 @@ a {
   .skills_cardListeningTitle {
     padding-top: 25px;
   }
+
   .pricing {
-    margin-top: 50px;
+    margin-top: 100px;
   }
+
   .aboutUs_container {
     margin-top: 50px;
   }
+
   .aboutUs_title {
     text-align: center;
   }
-  .contactUs_flex{
-    gap: 0;
-  }  
-}
 
-@media screen and (max-width:850px) {
-  .container1338{
-    padding: 0 15px;
+  .contactUs_flex {
+    gap: 0;
   }
-  .header_titleImgFlex{
+
+  .contactUs_InfoBlock {
+    order: -1;
+  }
+
+  .pricing_img,
+  .pricing_img2,
+  .pricing_img3 {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
     display: block;
   }
-  
-  .header_InfoText{
+
+  .pricing_img2 {
+    margin-top: 30px;
+  }
+
+  .pricing_CardText,
+  .pricing_CardText3,
+  .pricing_CardText2 {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  .pricing_CardText2 {
+    margin-bottom: 50px;
+  }
+
+  .pricing_CardPrice {
+    margin: 0 auto;
+  }
+
+  .contactUs {
+    margin-top: 100px;
+  }
+
+  .contactUs_Img {
+    margin-top: 25px;
+  }
+
+  .contactUs_Line {
+    margin-top: 35px;
+  }
+
+  .title {
+    text-align: center;
+    margin: 0 0 15px 0;
+  }
+
+  .p_text20 {
     text-align: center;
   }
+}
+
+.label {}
+.label {}
+.label {}
+
+@media screen and (max-width:850px) {
+  .container1338 {
+    padding: 0 15px;
+  }
+
+  .header_titleImgFlex {
+    display: block;
+  }
+
+  .header_InfoText {
+    text-align: center;
+  }
+
+  .skills {
+    margin-top: 50px;
+  }
+
   .scills_boxgrid {
     grid-template-areas:
       "one"
@@ -745,40 +832,49 @@ a {
     justify-items: center;
     justify-content: center;
   }
-  .skills_cardSpeakingInfo{
+
+  .skills_cardSpeakingInfo {
     padding: 0 15px;
   }
+
   .skills_cardSpeakingText2 {
     margin-bottom: 60px;
   }
+
   .skills_cardWritingText {
     margin-bottom: 170px;
   }
+
   .skills_cardReadingText {
     margin-bottom: 150px;
   }
-  .skills_cardWritingInfo{
+
+  .skills_cardWritingInfo {
     padding: 0 15px;
     margin-bottom: 20px;
   }
-  .skills_cardReadingInfo{
+
+  .skills_cardReadingInfo {
     padding: 0 15px;
   }
-  .skills_cardReadingImg{
+
+  .skills_cardReadingImg {
     padding: 0;
     margin: 0;
   }
-  
-  .skills_cardReadingImg img{
+
+  .skills_cardReadingImg img {
     margin: 0 auto;
     max-width: 100%;
     height: auto;
     display: block;
   }
-  .skills_cardWritingImg{
+
+  .skills_cardWritingImg {
     margin: 0 auto;
   }
-  .cardSpeakingImg img{
+
+  .cardSpeakingImg img {
     max-width: 100%;
     height: auto;
     display: block;
@@ -789,12 +885,14 @@ a {
     min-height: 650px;
     width: 100%;
   }
-  .skills_cardListeningImg img{
+
+  .skills_cardListeningImg img {
     max-width: 100%;
     height: auto;
     display: block;
   }
-  .skills_cardListeningInfo{
+
+  .skills_cardListeningInfo {
     padding: 0 20px;
   }
 
@@ -802,79 +900,49 @@ a {
     min-height: 650px;
   }
 
-  .form_input {
-    max-width: 375px;
-  }
-
-  
-
-  .title {
-    text-align: center;
-    margin: 0 0 15px 0;
-  }
-  .p_text20{
-    text-align: center;
-  }
-
-  
-
   .header_TitleImg {
     display: none;
   }
-  .aboutUs_Img img{
+
+  .aboutUs_Img img {
     max-width: 100%;
     height: auto;
     display: block;
   }
-  .aboutUs_infoFlex{
+
+  .aboutUs_infoFlex {
     flex-wrap: wrap;
     justify-content: center;
     gap: 25px;
   }
-  .aboutUs_info3{
+
+  .aboutUs_info3 {
     padding: 0;
   }
-  .pricing_ContainerCardsFlex{
+
+  .pricing_ContainerCardsFlex {
     gap: 50px;
   }
-  
-  .pricing_img,
-  .pricing_img2,
-  .pricing_img3 {
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
-    height: auto;
-    display: block;
-  }
-    
-  
-  .title_cards{
-    text-align: center;
-    margin: 10px;
-  }
-  .pricing_CardText,
-  .pricing_CardText3,
-  .pricing_CardText2 {
-    text-align: center;
-    margin-bottom: 25px;
-  }
-  
-  .pricing_CardPrice{
+
+  .pricing_CardPrice {
     margin: 0 auto;
   }
 
   .contactUs_SubscribeBlock {
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
   }
-  .contactUs{
-    margin-top: 150px;
-  }
-  
-  .contactUs_footerBlockFlex{
+
+  .contactUs_footerBlockFlex {
     gap: 50px;
   }
-  
+  .title_cards {
+    text-align: center;
+    margin: 10px;
+  }
+
+  /* Всплывающее Меню */
+  .label {}
 
   .burger-menu {
     display: flex;
