@@ -103,9 +103,9 @@ a {
   width: 30px;
   height: 21px;
   cursor: pointer;
-  position: absolute;
+  position: fixed;
   right: 20px;
-  top: 30px;
+  top: 20px;
 }
 
 .burger-menu span {
