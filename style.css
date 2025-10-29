@@ -808,6 +808,9 @@ a {
   .container1338 {
     padding: 0 15px;
   }
+  .title{
+    padding-top: 30px;
+  }
   .header_MenuFlex{
     position: fixed;
     max-width: 850px;
