@@ -103,7 +103,7 @@ a {
   width: 30px;
   height: 21px;
   cursor: pointer;
-  position: fixed;
+  position: absolute;
   right: 20px;
   top: 20px;
 }
@@ -808,6 +808,13 @@ a {
   .container1338 {
     padding: 0 15px;
   }
+  .header_MenuFlex{
+    position: fixed;
+    max-width: 850px;
+    width: 100%;
+    background-color: #fff;
+  }
+  
 
   .header_titleImgFlex {
     display: block;
@@ -975,11 +982,12 @@ a {
     height: 60px;
     font-size: 20px;
   }
+  
 
   /* Показываем меню при активном классе */
   .header_innerMenuFlex.active {
     display: flex;
-    top: 75px;
+    top: 50px;
   }
 
   /* Анимация для бургера при активном состоянии */
